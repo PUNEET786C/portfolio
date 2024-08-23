@@ -55,7 +55,7 @@ nav ul li a {
 /* Home Section */
 #home {
     height: 105vh;
-    background-image: url('media/first\ page.png');
+    background-image: url('/media/first\ page.png');
     background-size: cover;
 
     color: #fff;
