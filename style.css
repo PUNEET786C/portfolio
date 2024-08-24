@@ -307,6 +307,19 @@ footer {
 
 
 @media (max-width: 768px) {
+    #home {
+        height: 100vh;
+        background-image: url('media/mobile9.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
    
     
     .menu-icon {
