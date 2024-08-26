@@ -353,7 +353,7 @@ footer {
         position:relative;
         width: 300px;
         height: 400px;
-        margin-top: -300px;
+        margin-top: -250px;
         animation: TBG 2s forwards alternate;
         animation-iteration-count: infinite;
         animation-delay: 1s;
