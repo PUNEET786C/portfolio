@@ -347,7 +347,7 @@ footer {
 
 @media (max-width: 768px) {
     #home {
-    background-image:url('../media/background.png');
+    background-image:url('media/background.png');
     }
     .tbg{
         display: block;
