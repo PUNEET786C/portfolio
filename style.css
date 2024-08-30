@@ -441,7 +441,7 @@ footer {
         margin: 2rem 0;
         animation: appear linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 20% ;
+        animation-range: entry 0% cover 30% ;
         transition: all 1s ease;
        
     }
@@ -464,7 +464,7 @@ footer {
         text-align: center;
         animation: address linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 20% ;
+        animation-range: entry 0% cover 30% ;
         transition: all 1s ease;
         
     }
