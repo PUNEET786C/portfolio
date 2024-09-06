@@ -91,9 +91,9 @@ nav ul li a {
 #home button:hover{
     background-color: #4442af;
     color: #fff;
-    transition: all 0.5s ease ;
-    padding: 1.5rem;
-    font-size: 25px;
+    transition: all 0.5s  ease-in-out ;
+    padding: 1.0rem;
+    font-size: 20px;
 }
 
 /* About Section */
@@ -354,9 +354,9 @@ footer {
         width: 300px;
         height: 400px;
         margin-top: -200px;
-        animation: TBG 2s forwards alternate;
-        animation-iteration-count: infinite;
-        animation-delay: 1s;
+        animation: TBG 1s forwards alternate;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
         
     }
     
@@ -365,12 +365,12 @@ footer {
         0%{
             width: 300px;
             height: 400px;
-            transform: translatey(0px);
+            transform: translatey(-1000px) translatex(0px) ;
         }
         100%{
             width: 300px;
             height: 400px;
-            transform: translatey(-10px);
+            transform: translatey(0px)translatex(0px);
 
         }
         
@@ -386,6 +386,7 @@ footer {
         0%{
             font-size: 1rem;
             margin-bottom: 25px;
+            transform: translateX(1000px);
         }
         50%{
             
@@ -393,6 +394,22 @@ footer {
         100%{
             font-size: 2rem;
             margin-bottom: 20px;
+            transform:translateX(0px);
+        }
+        
+    }
+    #home p {
+        animation: homep 1s ease forwards;
+    }
+    @keyframes homep {
+        0%{
+            transform: translateX(1000px);
+        }
+        50%{
+            
+        }
+        100%{
+            transform:translateX(0px);
         }
         
     }
@@ -406,6 +423,7 @@ footer {
         margin-top: 2rem;
         border-radius: 50px;
         font-weight: bold;
+        animation: line 1s ;
     }
     #home button:hover{
         background-color: seagreen;
