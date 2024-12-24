@@ -9,9 +9,6 @@
 body,html{
     background-color: black;
     font-family: -apple-system ;
-     overflow-x:hidden;
-    width:100%;
-    height:100%;
     
 }
 
@@ -54,35 +51,28 @@ nav ul li a {
 
 /* Home Section */
 #home {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(160deg, #000000, #4442af);
+    height: 105vh;
+    background-image: url('about.png');
+    background-size: cover;
+
     color: #fff;
-    text-align: center;
-    
-}
-#container{
-    width: 100vw;
-    height: 100vh;
-    margin-bottom: 150px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    position: absolute;
+    text-align: center;
+    padding: 2rem;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20% ;
+    transition: all 1s ease;
 }
-#Mpic{
+.tbg{
     display: none;
-}
-#Cpic{
-    
-    width: 20vw;
-    position: relative;
-    max-width: 30vw;
 }
 
 #home h1 {
-    font-size: 4vw;
+    font-size: 3rem;
     margin-bottom: 25px;
     animation: home 1s ease;
     
@@ -98,7 +88,6 @@ nav ul li a {
     border-radius: 50px;
     font-weight: bold;
     transition: all 0.5s ease-in-out ;
-    margin-bottom:100px;
 }
 #home button:hover{
     background-color:#000000;
@@ -293,11 +282,6 @@ nav ul li a {
     background: linear-gradient(-160deg, #000000, #4442af);
     color: #fff;
     text-align: center;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .contact-container {
@@ -406,7 +390,7 @@ footer {
     justify-content: center;
     margin-top: 1rem;
 }
-#nav-links li a:hover {
+#nav-links li a:hover , #nav-links li a.active {
     font-size: 20px;
     padding: 5px;
     border-radius: 10px;
@@ -437,35 +421,20 @@ footer {
 
 
 @media (max-width: 768px) {
-    header{
-        background-color: black;
-    
-    
+    #home {
+    background-image:url('media/background.png');
     }
-   
-    #home{
-        width: 100vw;
-        height: 100vh;
-        background:  rgb(5, 20, 5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .tbg{
+        display: block;
+        position:relative;
+        width: 300px;
+        height: 400px;
+        margin-top: -200px;
+        animation: TBG 1s forwards alternate;
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+        
     }
-    #container{
-        margin-bottom: 100px;
-    }
-
-   #Mpic{
-    display: block;
-    animation: TBG 1s forwards alternate;
-    animation-iteration-count: 1;
-    animation-delay: 0s;
-   
-   }
-   #Cpic{
-    display: none;
-  
-   }
     
    
     @keyframes TBG {
@@ -475,10 +444,9 @@ footer {
             transform: translatey(-1000px) translatex(0px) ;
         }
         100%{
-            width: 500px;
-            height: 600px;
+            width: 300px;
+            height: 400px;
             transform: translatey(0px)translatex(0px);
-
 
         }
         
@@ -541,7 +509,7 @@ footer {
     }
     #about {
         padding: 4rem 2rem;
-        background:  rgb(5, 20, 5);
+        background: linear-gradient(160deg, #000000, #4442af);
         color: #fff;
         text-align: center;
         position: relative;
@@ -557,7 +525,7 @@ footer {
     
     #projects {
         padding: 4rem 2rem;
-        background:  rgb(5, 20, 5);
+        background: linear-gradient(-160deg, #000000, #4442af);
         color: #fff;
         text-align: center;
         position: relative;
@@ -585,7 +553,7 @@ footer {
 
     #contact {
         padding: 60px 20px;
-        background:  rgb(5, 20, 5);
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
         color: #fff;
         text-align: center;
       }
