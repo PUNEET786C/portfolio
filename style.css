@@ -10,6 +10,8 @@ body,html{
     background-color: black;
     font-family: -apple-system ;
      overflow-x:hidden;
+    width:100%;
+    height:100%;
     
 }
 
